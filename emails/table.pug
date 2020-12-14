@@ -1,0 +1,14 @@
+table(style='width:100%;text-align: left')
+ thead
+  tr
+    th(style='border-top: 1px solid #dee2e6; padding: 5px;text-align: left') Imported By
+    th(style='border-top: 1px solid #dee2e6; padding: 5px;text-align: left') Survey Id
+    th(style='border-top: 1px solid #dee2e6; padding: 5px;text-align: left') Survey Name
+    th(style='border-top: 1px solid #dee2e6; padding: 5px;text-align: left') Import Status
+ tbody
+  each task in surveys
+    tr
+     td(style='border-top: 1px solid #dee2e6; padding: 5px;text-align: left') #{task.mailId}
+     td(style='border-top: 1px solid #dee2e6; padding: 5px;text-align: left') #{task.surveyId}
+     td(style='border-top: 1px solid #dee2e6; padding: 5px;text-align: left') #{task.surveyName}
+     td(style='border-top: 1px solid #dee2e6; padding: 5px;text-align: left') #{task.importStatus}
